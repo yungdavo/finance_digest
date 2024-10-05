@@ -2,14 +2,16 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 class DatabaseHelper {
-  static final DatabaseHelper _instance = DatabaseHelper._internal();
-  factory DatabaseHelper() => _instance;
+  final Database? db;
+
+  // Pass a Database instance for testing, or null to use the default database
+  DatabaseHelper({this.db});
 
   static Database? _database;
 
-  DatabaseHelper._internal();
-
+  // Use the provided database or create a new one
   Future<Database> get database async {
+    if (db != null) return db!; // Use the injected database if provided
     if (_database != null) return _database!;
     _database = await _initDatabase();
     return _database!;
