@@ -1,4 +1,3 @@
-import 'package:finance_digest/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -106,7 +105,7 @@ class _NotificationsState extends State<Notifications> {
             alignment: Alignment.center,
             height: 48.h,width: 375.w,
             decoration: BoxDecoration(
-              color: AppColors.mainColor,
+              color: Color(0XFF523AE4),
               borderRadius: BorderRadius.all(Radius.circular(30)
               ),
             ),

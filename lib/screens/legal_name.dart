@@ -1,4 +1,3 @@
-import 'package:finance_digest/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../customs/custom_widgets.dart';
@@ -74,7 +73,7 @@ class _LegalNameState extends State<LegalName> {
         title: Text(
             "Your legal name",
           style: TextStyle(
-            color: AppColors.textColor,
+            color: Color(0XFF171717),
             fontSize: 30.sp, fontWeight: FontWeight.w700,
             fontFamily: 'Roboto',
           ),
@@ -107,7 +106,7 @@ class _LegalNameState extends State<LegalName> {
       floatingActionButton: FloatingActionButton(
         elevation: 0.0,
         onPressed:  saveName,
-        backgroundColor: isButtonActive ? AppColors.mainColor : Color(0XFFb6adf2),
+        backgroundColor: isButtonActive ? Color(0XFF523AE4) : Color(0XFFb6adf2),
         child: Icon(
              Icons.navigate_next,
         ),

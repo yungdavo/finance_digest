@@ -8,7 +8,7 @@ class MockDatabase extends Mock implements Database {}
 void main() {
   test('should insert user into the database', () async {
     final mockDb = MockDatabase();
-    final dbHelper = DatabaseHelper(db: mockDb); // Inject mockDb
+    final dbHelper = DatabaseHelper(db: mockDb); // Injected mockDb
 
     // Mock database interaction
     when(mockDb.insert('User', any, conflictAlgorithm: anyNamed('conflictAlgorithm')))
