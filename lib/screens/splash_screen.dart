@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(Duration(seconds: 3), () {});
+    await Future.delayed(Duration(seconds: 4), () {});
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => LegalName(firstName: '',)),
@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0XFF000000),
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             child: SizedBox(
               height: 188.h,width: 188.w,
               child: Image.asset(
-                  "assets/images/logo.png"
+                  "assets/images/splash_logo1.png"
               ),
             ),
           ),
