@@ -68,7 +68,7 @@ class _DashBoardState extends State<DashBoard> {
                           "Something went wrong. Please try again later.",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 16.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.w500,
                           fontFamily: 'Rubik',
                           ),
